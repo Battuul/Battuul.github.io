@@ -39,3 +39,8 @@ h1 {
 .btn {
 	font-weight: bold;
 }
+
+#mc_embed_signup {
+	display: flex;
+	justify-content: center;
+}
