@@ -24,6 +24,10 @@ dd {
 	font-Style: italic;
 }
 
+ol { /* https://stackoverflow.com/questions/5425425/how-can-i-center-the-text-but-not-the-number-label-of-an-html-ordered-list/5426130#5426130 */
+    counter-reset: 4;
+}
+
 .special {
 	color: #B80C96;
 	font-Style: italic;
