@@ -1,10 +1,12 @@
 body {
 	background-color: #F7E7FF;
 }
+
 h1 {
 	font-family: Giorgia;
 	color: #6E0D9D;
 }
+
 p {
 	font-family: sans-serif;
 	color: #3B0357;
@@ -20,7 +22,6 @@ dt {
 
 dd {
 	font-Style: italic;
-	
 }
 
 .special {
@@ -29,8 +30,8 @@ dd {
 }
 
 .column {
-  display: inline-block;
-  padding: 10px;
+	display: inline-block;
+	padding: 10px;
 }
 
 a:link {
@@ -43,8 +44,5 @@ a:hover {
 }
 
 p::first-letter {
-  font-size: 150%;
+	font-size: 150%;
 }
-
-
-
