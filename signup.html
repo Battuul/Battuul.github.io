@@ -5,13 +5,61 @@
 <link href="signupstyle.css" type="text/css" rel="stylesheet" />
 </head>
 <body>
-	<form action="http://mumstudents.org/params.php">
+	<img src="images/logo.png" alt="logo">
+	<form action="signup.php">
 		<fieldset>
-			<legend>Credit cards:</legend>
-			<input type="radio" name="cc" value="visa" checked="checked" /> Visa
-			<input type="radio" name="cc" value="mastercard" /> MasterCard <input
-				type="radio" name="cc" value="amex" /> American Express
+			<legend>New User Signup:</legend>
+			<div>
+				<label for="name">Name: </label> <input id="name" type="text" name="name" size="16" />
+			</div>
+			<div>
+				<label>Gender: </label> <input type="radio" name="gender"
+					value="male" /> Male <input class="right" type="radio" name="gender"
+					value="female" checked="checked" /> Female
+			</div>
+			<div>
+				<label>Age: </label> <input type="text" name="age" size="6"
+					maxlength="2" />
+			</div>
+			<div>
+				<label>Personality type: </label> <input type="text"
+					name="personality" size="6" maxlength="4" /> (<a
+					href="http://www.humanmetrics.com/cgi-win/jtypes2.asp">Don't
+					know your type?</a>)
+			</div>
+			<div>
+				<label>Favorite OS: </label> <select id="os" name="os">
+					<option value="windows">Windows</option>
+					<option value="mac">Mac OS X</option>
+					<option value="linux">Linux</option>
+				</select>
+			</div>
+			<div>
+				<label>Seeking age: </label> <input type="text" name="agefrom"
+					size="6" maxlength="2" placeholder="min" /> to <input class="right" type="text"
+					name="ageto" size="6" maxlength="2" placeholder="max" />
+			</div>
+			<div>
+				<input type="submit" value="Sign Up" />
+			</div>
 		</fieldset>
 	</form>
+	<p>This page is for single nerds to meet and date each other! Type
+		in your personal information and wait fur the nerdly love to begin!
+		Thank you for using our site.</p>
+	<p>Results and page (C) Copyright NerdLuv Inc.</p>
+	<div class="back">
+		<a href="Battuul.github.io/home"><img src="images/back.png"
+			alt="back">Back to front page</a>
+	</div>
+	
+	<div class="links">
+		<a href="http://validator.w3.org/check?uri=referer"
+			onclick="this.href='http://validator.w3.org/check?uri=' + document.URL"><img
+			src="images/w3c-html.png" alt="Valid HTML5" /></a>
+			<a href="https://jigsaw.w3.org/css-validator/check?uri=referer"><img
+			src="images/w3c-css.png" alt="Valid CSS" /></a>
+	</div>
+	
 </body>
 </HTML>
