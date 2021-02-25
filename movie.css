@@ -24,9 +24,9 @@ h1 {
 .main {
 	width: 800px;
 	margin: auto;
-	border: 4px solid gray;
+	border: 5px solid gray;
 	border-radius: 20px;
-	overflow: hidden;	
+	overflow: hidden;
 }
 
 .leftSection {
@@ -146,4 +146,8 @@ h2 {
 
 .links img {
 	opacity: 50%;
+}
+
+.spacer {
+	clear: left;
 }
