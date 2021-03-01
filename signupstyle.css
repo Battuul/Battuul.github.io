@@ -16,7 +16,6 @@ body {
 div {
 	margin: 20px;
 	position: relative;
-	
 }
 
 fieldset {
@@ -38,19 +37,16 @@ input[type=submit] {
 	
 }
 
-label {
-	font-weight: bold;
-}
-
 a {
 	text-decoration: none;
 	color: red;
 }
 
-label {
+label:not(#male, #female) {
   position: absolute;
   width: 150px;
   left: 0;
+  font-weight: bold;  
 }
 
 input {
