@@ -6,11 +6,11 @@
 	-->
 <script>
 function calcTip() {
-	//var subtotalElem = 
-	//var tipElem = 
+	var subtotalElem = document.getElementById('subtotal')
+	var tipElem = document.getElementById('tip');
 	var totalElem = document.getElementById('total');
-	var subtotal = parseInt(document.getElementById('subtotal').value);
-	var tip = parseInt(document.getElementById('tip').value);
+	var subtotal = parseInt(subtotalElem.value);
+	var tip = parseInt(tipElem.value);
 	var total = subtotal + (subtotal * (tip / 100));
 	totalElem.innerHTML = '$' + total;
 }
