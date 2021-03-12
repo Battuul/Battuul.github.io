@@ -3,7 +3,6 @@ $(document).ready(function() {
 	$("#start").click(function() {
 		start = true;
 		$("#status").text("Game started, GOOD LUCK :D ");
-		win = true;
 		$(".boundary").removeClass("youlose");
 	});
 	$(".boundary").mouseover(function() {
@@ -20,7 +19,6 @@ $(document).ready(function() {
 		if (start) {
 			start = false;
 			$("#status").text("You lose :(");
-			win = false;
 			$(".boundary").addClass("youlose");
 		}
 	}
