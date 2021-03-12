@@ -1,25 +1,33 @@
 $(document).ready(function() {
-	var win = true;
-	$(".boundary").mouseover(function() {
-		win = false;
-		$(".boundary").addClass("youlose");
-	});
-
-	$("#end").mouseover(function() {
-		if (win) $("#status").text("You win :)");
-		else $("#status").text("You lose :(");
-	});
-
+	var start = false;
 	$("#start").click(function() {
-		$("#status").text("Click the \"S\" to begin.");
+		start = true;
+		$("#status").text("Game started, GOOD LUCK :D ");
 		win = true;
 		$(".boundary").removeClass("youlose");
+	});
+	$(".boundary").mouseover(function() {
+		lose();
 	});
 
 	$("body").mouseover(function() {
 		if (event.target.id != ("maze") && event.target.id != ("start") && event.target.id != ("end")) {
+			lose();
+		}
+	});
+
+	function lose() {
+		if (start) {
+			start = false;
+			$("#status").text("You lose :(");
 			win = false;
 			$(".boundary").addClass("youlose");
+		}
+	}
+	$("#end").mouseover(function() {
+		if (start) {
+			start = false;
+			$("#status").text("You win :)");
 		}
 	});
 
